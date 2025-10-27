@@ -14,7 +14,7 @@ spec:
   template:
     metadata:
       labels:
-        app: votea
+        app: vote
         tier: front
     spec:
       containers:
