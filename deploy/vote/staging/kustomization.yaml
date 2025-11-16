@@ -11,7 +11,7 @@ replicas:
     count: 7
 
 images:
-  - name: schoolodevops/vote
+  - name: schoolofdevops/vote
     newTag: v4
 
 namespace: instavote
@@ -22,3 +22,7 @@ commonLabels:
 
 commonAnnotations:
   supported-by: "sre@example.com"
+
+configMapGenerator:
+  - name: vote-options
+    env: options.env
